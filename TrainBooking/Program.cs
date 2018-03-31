@@ -8,8 +8,16 @@ namespace TrainBooking
 {
     class Program
     {
+        //  Keep the program running whilst it is active
         static void Main(string[] args)
         {
+            bool isActive = true;
+
+            do
+            {
+                Menu.Instance.MainMenu();
+            }
+            while (isActive);
         }
     }
 }
